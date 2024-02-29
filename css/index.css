@@ -1,0 +1,79 @@
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../photo/rwbilling.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(1px);
+
+}
+
+.form_container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Bordered form */
+form {
+  height: 38vh;
+  width: 30%;
+  border-radius: 6px;
+  border: 2px solid #f1f1f1;
+  background-color: rgba(68, 66, 78, 0.737);
+}
+
+label {
+  color: white;
+  font-size: 20px;
+}
+
+/* to style inputs */
+.input_box input {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 18px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 3px;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.bottom_section {
+  background-color: #f1f1f1;
+padding: 5px;
+font-size: 20px;
+border-bottom-left-radius:6px ;
+border-bottom-right-radius: 6px;
+}
+
+
+/* Add a hover effect for buttons */
+button:hover {
+  box-shadow: 3px 3px 3px black;
+}
+
+
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+

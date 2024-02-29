@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.admin {
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  padding: 1rem;
+}
+.logo{
+  width: 100px;
+  height:100px;
+}
+.logo img{
+  width: 100px;
+  height: 100px;
+ margin-left: 90px;
+}
+
+.container {
+  display: flex;
+  min-height: 100%;
+}
+nav {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  min-height: 100vh;
+  left: 0;
+  background: #218270;
+  width: 280px;
+  overflow: hidden;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+}
+
+li a {
+  font-weight: 600;
+  position: relative;
+  color: white;
+  font-size: 14px;
+  display: table;
+  width: 280px;
+  padding: 10px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+li a:hover {
+    background: gainsboro;
+  color: #0b0b0b;
+  font-weight: bold;
+}
+nav .fas {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 4px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-item {
+  position: relative;
+  margin-left: 20px;
+}
+.parent-item a,
+.parent-item .sub-menu a {
+  font-weight: 600;
+  position: relative;
+  color: white;
+  /*font-size: 14px;*/
+  display: table;
+  width: 280px;
+  padding: 10px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.parent-item a:hover,
+.parent-item .sub-menu a:hover {
+  background-color: gainsboro;
+  color: #0b0b0b;
+  font-weight: bold;
+}
+
+.parent-item .sub-menu a:hover {
+  background: gainsboro;
+  color: #0b0b0b;
+  font-weight: bold;
+}
+
+/* Hide the sub-menu items by default */
+.sub-menu {
+  display: none;
+}
+
+/* Show the sub-menu items when the parent item is clicked */
+.parent-item.clicked .sub-menu {
+  display: block;
+}
+.logout {
+  position: absolute;
+  bottom: 0;
+}
