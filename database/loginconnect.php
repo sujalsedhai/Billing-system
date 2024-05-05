@@ -23,7 +23,7 @@
         } else {
             echo "<script>
             alert('please register first');
-            window.location.href='../format/registration.php
+            window.location.href='../index.php';
             
             </script>";
         }

@@ -24,14 +24,13 @@
             alert('Register Successful');
             window.location.href='../public/index.php';
             </script>";
-
             }
             $stmt->close();
             $conn->close();
         } else {
             echo "<script>
         alert('password does not match');
-        window.location.href='../public/index.php';
+        window.location.href='../format/registration.php';
         </script>";
 
         }

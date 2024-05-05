@@ -8,32 +8,36 @@
     <script type="text/javascript">
 
 
-
         function validity() {
 
-            var username = document.getElementById("username").value;
-            var email = document.getElementById("email").value;
-            let message = document.getElementById('message').value;
+            var usernameInput= document.getElementById('username');
+            var passwordInput = document.getElementById('password');
+            var email = document.getElementById('email');
+            
 
 
-            let nameRegex = new RegExp("^[a-zA-Z]{4,}$");
-            if (!nameRegex.test(username)) {
-                alert("Invalid name ");
+            var usernameRegex = /^[a-zA-Z]{4,}$/;
+
+            if (!usernameRegex.test(usernameInput.value)) {
+                alert("username must contain only alphabets");
+                usernameInput.focus();
                 return false;
             }
 
-            let emailRegex = new RegExp("^[a-zA-Z0-9\._-]+\@[a-zA-Z0-9-]+\.[a-zA-Z]{2,4}$");
+            var emailRegex = /^[a-zA-Z0-9\._-]+\@[a-zA-Z0-9-]+\.[a-zA-Z]{2,4}$/;
             if (!emailRegex.test(email)) {
                 alert("Invalid email address");
-
+                return false;
+            }
+            if(passwordInput.value.length<6)
+            {
+                alert("Password must be at least 6 characters");
+                passwordInput.focus();
                 return false;
             }
 
         }
         return true;
-
-
-
     </script>
 
 </head>
@@ -60,8 +64,7 @@
 
 
             <center><button type="submit">Register</button></center>
-
-
+            
         </form>
     </div>
 

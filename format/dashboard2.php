@@ -29,11 +29,11 @@
                             <span class="nav-item">Employee</span>
                         </a>
                         <ul class="sub-menu">
-                            <li><a href="addstudent.php">
+                            <li><a href="employee.php">
                                     <i class="fas fa-plus-circle"></i>
                                     <span class="nav-item">Add Employee</span>
                                 </a></li>
-                            <li><a href="#">
+                            <li><a href="manage_employee.php">
                                     <i class="fas fa-eye"></i>
                                     <span class="nav-item">View Employee</span>
                                 </a></li>
@@ -45,11 +45,11 @@
                             <span class="nav-item">Item</span>
                         </a>
                         <ul class="sub-menu">
-                            <li><a href="#">
+                            <li><a href="additem.php">
                                     <i class="fas fa-plus-circle"></i>
                                     <span class="nav-item">Add Item</span>
                                 </a></li>
-                            <li><a href="#">
+                            <li><a href="manage_item.php">
                                     <i class="fas fa-eye"></i>
                                     <span class="nav-item">View Item</span>
                                 </a></li>

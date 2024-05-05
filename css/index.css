@@ -63,15 +63,10 @@ font-size: 20px;
 border-bottom-left-radius:6px ;
 border-bottom-right-radius: 6px;
 }
-
-
 /* Add a hover effect for buttons */
 button:hover {
   box-shadow: 3px 3px 3px black;
 }
-
-
-
 /* Add padding to containers */
 .container {
   padding: 16px;
