@@ -84,6 +84,7 @@ nav .fas {
   background-color: gainsboro;
   color: #0b0b0b;
   font-weight: bold;
+
 }
 
 .parent-item .sub-menu a:hover {
@@ -104,4 +105,13 @@ nav .fas {
 .logout {
   position: absolute;
   bottom: 0;
+}
+
+.fa-solid{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 4px;
+  font-size: 20px;
+  text-align: center;   
 }

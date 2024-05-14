@@ -36,10 +36,10 @@ if (isset($_REQUEST['id'])) {
                         <input type="email" name="email" id="email" value="<?php echo $row['email']; ?>" required>
                         <span>Email</span>
                     </div>
-                    <div class="inputBox">
+                    <!-- <div class="inputBox">
                         <input type="password" name="password" id="password" value="<?php echo $row['password']; ?>" required>
                         <span>Password</span>
-                    </div>
+                    </div> -->
                     <div class="inputBox">
                         <input type="text" name="phone" id="phone" value="<?php echo $row['phone']; ?>" required>
                         <span>Phone</span>

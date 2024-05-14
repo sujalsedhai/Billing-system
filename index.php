@@ -14,9 +14,15 @@
 
       <div class="container">
         <div class="input_box">
+          <select name="role" id="role">
+            <option value="admin">Admin</option>
+            <option value="employee">Employee</option>
+          </select>
+        </div>
+
+        <div class="input_box">
           <label for="uname"><b>Username</b></label>
           <input type="text" placeholder="Enter Username" name="uname" required>
-
         </div>
         <div class="input_box">
           <label for="psw"><b>Password</b></label>
@@ -27,4 +33,5 @@
     </form>
   </div>
 </body>
+
 </html>

@@ -13,7 +13,9 @@
         <div class="sidebar">
             <nav>
                 <ul class="menu">
-                    <span class="admin"><u>Employee</u></span>
+                    <span class="admin"><u><?php session_start();
+                    echo $_SESSION['uname']; ?></u></span>
+
                     <br>
                     <br> <br>
                     <div class="logo">
@@ -26,17 +28,18 @@
                             <i class="fas fa-eye"></i>
                             <span class="nav-item">View Item</span> </a>
                     </li>
+                    <li class="parent-item">
+                        <a href="../process/changepasswordEmployee.php">
+                            <i class="fas fa-key" aria-hidden="true"></i>
+                            <span class="nav-item">Change Password</span>
+                        </a>
+                    </li>
 
                 <li><a href="../process/logout.php" class="logout">
                         <i class="fas fa-sign-out-alt"></i>
                         <span class="nav-item">Log out</span>
                     </a></li>
-                <li class="parent-item">
-                    <a href="#">
-                        <i class="fas fa-key" aria-hidden="true"></i>
-                        <span class="nav-item">Change Password</span>
-                    </a>
-                </li>
+              
                 </ul>
             </nav>
         </div>

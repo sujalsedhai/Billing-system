@@ -66,15 +66,15 @@
 
     if ($result->num_rows > 0) {
         echo "<table>
-        <tr><th>Id </th>
+      
         <th>Item name</th>
         <th>price</th>
         <th>Quantity</th>
-        <th>ACtion</th>
+        <th>Action</th>
         <tr>";
         while ($row = $result->fetch_assoc()) {
             echo " <tr>
-         <td>" . $row['id'] . "</td>       
+      
          <td>" . $row['name'] . "</td>       
          <td>" . $row['price'] . "</td>       
          <td>" . $row['quantity'] . "</td>    

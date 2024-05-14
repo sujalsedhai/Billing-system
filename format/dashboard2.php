@@ -13,16 +13,18 @@
 <body>
     <div class="container">
         <div class="sidebar">
+
             <nav>
                 <ul class="menu">
-                    <span class="admin"><u>Admin</u></span>
+                    <span class="admin"><u><?php session_start();
+                    echo $_SESSION['uname']; ?></u></span>
                     <br>
                     <br> <br>
                     <div class="logo">
                         <img src="../photo/hamrostore.png" alt="The logo of Hamro Store">
                     </div>
                     <br><br>
-                    
+
                     <li class="parent-item">
                         <a href="#">
                             <i class="fas fa-users"></i>
@@ -37,8 +39,16 @@
                                     <i class="fas fa-eye"></i>
                                     <span class="nav-item">View Employee</span>
                                 </a></li>
+                            <li>
+                                <a href="addAdmin.php">
+                                    <!-- <i class="fa-solid fa-user"></i> -->
+                                    <i class="fas fa-user"></i>
+                                    <span class="nav-item">New Admin</span>
+                                </a>
+                            </li>
                         </ul>
                     </li>
+
                     <li class="parent-item">
                         <a href="#">
                             <i class="fas fa-info"></i>
@@ -55,45 +65,49 @@
                                 </a></li>
                         </ul>
                     </li>
-                    
-                    <li><a href="../process/logout.php" class="logout">
-                            <i class="fas fa-sign-out-alt"></i>
-                            <span class="nav-item">Log out</span>
-                        </a></li>
                     <li class="parent-item">
-                        <a href="#">
+                        <a href="../process/changepassword.php">
                             <i class="fas fa-key" aria-hidden="true"></i>
                             <span class="nav-item">Change Password</span>
                         </a>
                     </li>
+                    <li><a href="../process/logout.php" class="logout">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span class="nav-item">Log out</span>
+                        </a></li>
+
+
                 </ul>
             </nav>
+
+
+
         </div>
-       
 
 
-                <script>
-                    document.addEventListener('DOMContentLoaded', function () {
-                        const parentItems = document.querySelectorAll('.parent-item');
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const parentItems = document.querySelectorAll('.parent-item');
+                parentItems.forEach(item => {
+                    item.addEventListener('click', function (event) {
                         parentItems.forEach(item => {
-                            item.addEventListener('click', function (event) {
-                                parentItems.forEach(item => {
-                                    if (item !== this) {
-                                        item.classList.remove('clicked');
-                                    }
-                                });
-                                this.classList.toggle('clicked');
-                                event.stopPropagation();
-                            });
-                        });
-
-                        document.addEventListener('click', function () {
-                            parentItems.forEach(item => {
+                            if (item !== this) {
                                 item.classList.remove('clicked');
-                            });
+                            }
                         });
+                        this.classList.toggle('clicked');
+                        event.stopPropagation();
                     });
-                </script>
+                });
+
+                document.addEventListener('click', function () {
+                    parentItems.forEach(item => {
+                        item.classList.remove('clicked');
+                    });
+                });
+            });
+        </script>
 
 
 </body>

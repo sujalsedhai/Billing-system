@@ -66,15 +66,15 @@
 
     if ($result->num_rows > 0) {    
         echo "<table>
-        <tr><th>Eid </th>
+       
         <th>Employee name</th>
         <th>Email</th>
         <th>Phone</th>
-        <th>ACtion</th>
+        <th>Action</th>
         <tr>";
         while ($row = $result->fetch_assoc()) {
             echo " <tr>
-         <td>" . $row['id'] . "</td>       
+         
          <td>" . $row['name'] . "</td>       
          <td>" . $row['email'] . "</td>       
          <td>" . $row['phone'] . "</td>    
