@@ -37,7 +37,7 @@ $result = $conn->query($sql);
                     <br><br>
 
                     <li>
-                        <a href="manage_item.php">
+                        <a href="manage.item.php">
                             <i class="fas fa-eye"></i>
                             <span class="nav-item">View Item</span> </a>
                     </li>
@@ -110,7 +110,6 @@ $result = $conn->query($sql);
                             <div class="inputBox">
                                 <input type="button" name="" value="save" id="save" />&nbsp;&nbsp;
                                 <input type="button" name="" value="reset" id="reset" />&nbsp;&nbsp;
-                                <input type="button" name="" value="close" id="close" />
                             </div>
                         </form>
                     </div>
