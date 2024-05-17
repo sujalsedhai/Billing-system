@@ -99,7 +99,7 @@ $result = $conn->query($sql);
 
 
                             <div class="inputBox">
-                                <input type="number" name="quantiity" id="quantiity" />
+                                <input type="number" name="quantiity" id="quantiity" min="1"/>
                                 <span>Quantiity</span>
                             </div>
                             <div class="inputBox">

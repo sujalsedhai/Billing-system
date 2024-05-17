@@ -26,14 +26,13 @@
       
       .hero {
         position: static;
-        padding: 40px 40px;
         /* margin-top: 4rem; */
         justify-content: right;
         display: flex;
         font-family: "Courier New", Courier, monospace;
       }
       .dashboard{
-        padding: 0 50px;
+margin-left: 4rem;
         width: 60vh;
         border: 2px solid yellow;
         border-radius: 5px;

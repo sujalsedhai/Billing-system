@@ -89,7 +89,7 @@
     
         echo "<script>
             alert('There is no Item. Please insert the data first');
-            window.location.href='dashboard2.php';
+            window.location.href='dashboard3.php';
         </script>";
     }
 
