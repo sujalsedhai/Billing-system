@@ -6,16 +6,8 @@ if (isset($_REQUEST['quantity'])) {
     $price = $_REQUEST['price'];
 
     include_once "../database/connected.php";
-    $sql = "select quantity from item where name = '$name'";
-    $oldquantity = $conn->query($sql);
-    $data = $oldquantity->fetch_assoc();
-    if (!empty($data)) {
-        $oldquantity = $data['quantity'];
-    } else {
-        $oldquantity = 0;
-    }
-    echo "$oldquantity";
-    $sql = "INSERT INTO item(quantity, name, price) VALUES('$quantity', '$name', '$price') on duplicate key update quantity=values(quantity)+$oldquantity";
+
+    $sql = "INSERT INTO item(quantity, name, price) VALUES('$quantity', '$name', '$price')";
     $result = $conn->query($sql);
 
     if ($result) {

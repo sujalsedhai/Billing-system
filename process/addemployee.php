@@ -9,7 +9,7 @@ if (isset($_REQUEST['employeename'])) {
     $servername = "localhost";
     $username = "root";
     $dbpassword = "";
-    $dbname = "test";
+    $dbname = "project";
 
     $conn = new mysqli($servername, $username, $dbpassword, $dbname);
 

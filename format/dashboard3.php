@@ -53,71 +53,24 @@ $result = $conn->query($sql);
                             <span class="nav-item">Log out</span>
                         </a></li>
 
-                </ul>
-            </nav>
+                        
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div class="dashboard">
+              <div class="header">
+              </div>
+              <div class="content">
+                <a href="bill.php">
+                  <div>Create Bill</div>
+                </a>
+               
+              </div>
+            </div>
         </div>
 
-        <section class="Main">
-            <!-- Hero section -->
-            <main>
-                <section class="hero">
-                    <div class="dashboard" id="dashboard">
-                        <form action="#" method="post">
-                            <h2>This is dashboard</h2>
-                            <div class="inputBox">
-                                <select name="item" id="itemSelect"  class="selectItem">
-                                    <option value="" disabled selected>Select an Item</option>
-                                    <?php
-                                    if ($result->num_rows > 0) {
-                                        while ($row = $result->fetch_assoc()) {
-                                            ?>
-                                            <option value="<?php echo $row['name'] ?>" data-price="<?php echo $row['price'] ?>">
-                                                <?php echo $row['name'] ?>
-                                            </option>
-                                            <?php
-                                        }
-                                    }
-                                    ?>
-                                </select>
-                                <span>Items</span>
 
-                            </div>
-                            <div class="inputBox">
-                                <input type="number" name="price" id="price" readonly />
-                                <span>Price</span>
-                            </div>
-
-                            <script>
-                                document.getElementById('itemSelect').addEventListener('change', function () {
-                                    var selectedItem = this.value;
-                                    var selectedOption = this.options[this.selectedIndex];
-                                    var itemPrice = selectedOption.getAttribute('data-price');
-                                    document.getElementById('price').value = itemPrice || ''; // Update price field based on selected item
-                                });
-                            </script>
-
-
-
-                            <div class="inputBox">
-                                <input type="number" name="quantiity" id="quantiity" min="1"/>
-                                <span>Quantiity</span>
-                            </div>
-                            <div class="inputBox">
-                                <input type="button" name="" value="Add Cart" id="Add cart" />&nbsp;&nbsp;
-                            </div>
-
-                            <br>
-                            <div class="inputBox">
-                                <input type="button" name="" value="save" id="save" />&nbsp;&nbsp;
-                                <input type="button" name="" value="reset" id="reset" />&nbsp;&nbsp;
-                            </div>
-                        </form>
-                    </div>
-                </section>
-
-</body>
-
-</html>
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {

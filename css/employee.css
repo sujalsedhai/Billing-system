@@ -110,8 +110,14 @@
     text-align: center;
     margin-bottom: 10px;
     text-decoration: none;
-  }
-  .inputBox .back:hover {
+}
+.inputBox .back:hover {
     text-shadow: black 0px 2px 5px;
     color: #000000;
-  }
+}
+
+.error-message {
+    color: rgba(255, 255, 255)  ;
+    font-family: "open-sans", sans-serif;
+    font-size: 12px;
+}

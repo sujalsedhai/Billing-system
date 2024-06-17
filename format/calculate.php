@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     if ($stmt->execute()) {
         // Order placed successfully
-        echo "Order placed successfully.";
+     echo "Order placed successfully.";
     } else {
         // Error occurred while placing order
         echo "Error placing order: " . $stmt->error;

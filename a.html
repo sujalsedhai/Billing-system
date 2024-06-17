@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bill</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .bill-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .bill-header, .bill-items, .bill-total {
+            margin-bottom: 20px;
+        }
+        .bill-items table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .bill-items th, .bill-items td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        .bill-total {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="bill-container">
+        <div class="bill-header">
+            <h2>Bill</h2>
+            <p>Date: [Date]</p>
+            <p>Invoice Number: [Invoice Number]</p>
+            <p>Customer Name: [Customer Name]</p>
+            <p>Customer Address: [Customer Address]</p>
+        </div>
+        <div class="bill-items">
+            <h3>Items:</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>[Item 1]</td>
+                        <td>[Price 1]</td>
+                    </tr>
+                    <!-- Add more rows for additional items -->
+                </tbody>
+            </table>
+        </div>
+        <div class="bill-total">
+            <p><strong>Subtotal:</strong> [Subtotal]</p>
+            <p><strong>Tax (if applicable):</strong> [Tax]</p>
+            <p><strong>Total:</strong> [Total]</p>
+        </div>
+        <div class="bill-footer">
+            <p>Payment Method: [Payment Method]</p>
+            <p>Payment Status: [Payment Status]</p>
+        </div>
+    </div>
+</body>
+</html>
