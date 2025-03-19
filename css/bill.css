@@ -49,21 +49,7 @@ form {
   margin-bottom: 15px;
 }
 
-/* .form-group label {
-  display: block;
-  margin-bottom: 5px;
-  color: #333;
-  font-size: 16px;
-} */
 
-/* .form-group input[type="number"], .form-group select { */
-  /* width: calc(100% - 12px); Adjust width for padding */
-  /* padding: 10px; */
-  /* font-size: 0px; */
-  /* border: 1px solid #bdc3c7; */
-  /* border-radius: px; */
-  /* box-sizing: border-box; Include padding and border in width calculation */
-/* } */
 
 .form-group input[type="number"] {
   width: calc(50% - 6px); /* Adjust width for two inputs in a row */
@@ -89,9 +75,6 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
   background-color: #2980b9;
 }
-
-
-
 
 hr {
   border: none;
@@ -141,14 +124,3 @@ table tr:hover {
   color: #e74c3c;
   font-weight: bold;
 }
-
-/* @media (max-width: 768px) {
-  .container {
-      width: 95%;
-      padding: 10px;
-  }
-
-  .form-group input[type="number"], .form-group select, form input[type="submit"] {
-      width: 100%;
-  }
-} */

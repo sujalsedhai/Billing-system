@@ -104,20 +104,20 @@ $result = $conn->query($sql);
 
                             echo "<tr>";
                             echo "<td>" . $row["product_name"] . "</td>";
-                            echo "<td>" . number_format($row["total_price"], 2) . "</td>";
+                            echo "<td> Rs." . number_format($row["total_price"], 2) . "</td>";
                             echo "<td>" . $row["quantity"] . "</td>";
-                            echo "<td>" . number_format($itemTotal, 2) . "</td>";
+                            echo "<td> Rs." . number_format($itemTotal, 2) . "</td>";
                             echo "</tr>";
                         }
 
                         echo "<tr class='total-row'>
-                        <td colspan='3'>Total</td>
-                        <td id='totalAmount'>" . number_format($total, 2) . "</td>
+                        <td colspan='3' >Total</td>
+                        <td id='totalAmount'> Rs." . number_format($total, 2) . "</td>
                     </tr>";
                     } else {
                         echo "<tr class='total-row'>
                         <td colspan='3'>Total</td>
-                        <td id='totalAmount'>0.00</td>
+                        <td id='totalAmount' >Rs.0.00</td>
                     </tr>";
                     }
                     ?>

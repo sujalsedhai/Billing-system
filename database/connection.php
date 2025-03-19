@@ -15,7 +15,7 @@
         if ($password == $cpassword) {
             include "connected.php";
 
-            $sql = "insert into user(name,email,password) values(?,?,?)";
+            $sql = "insert into admin(name,email,password) values(?,?,?)";
             $stmt = $conn->prepare($sql);
             $stmt->bind_param("sss", $username, $email, $password);
             if ($stmt->execute()) {

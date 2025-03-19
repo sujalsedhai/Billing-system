@@ -16,7 +16,7 @@ if (isset($_REQUEST['employeename'])) {
         die("Connection failed: " . $conn->connect_error);
     }
 
-    $sql = "INSERT INTO user (name,email,password) VALUES('$ename', '$email', '$password')";
+    $sql = "INSERT INTO admin(name,email,password) VALUES('$ename', '$email', '$password')";
     $result = $conn->query($sql);
 
     if ($result) {

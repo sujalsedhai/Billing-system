@@ -75,16 +75,9 @@
                             <i class="fas fa-sign-out-alt"></i>
                             <span class="nav-item">Log out</span>
                         </a></li>
-
-
                 </ul>
             </nav>
-
-
-
         </div>
-
-
 
         <script>
             document.addEventListener('DOMContentLoaded', function () {
@@ -109,7 +102,20 @@
             });
         </script>
 
-
+        <div class="dashboard">
+            <div class="header">
+                <p>Welcome Admin!</p>
+            </div>
+            <div class="content">
+                <a href="manage_employee.php">
+                    <div>Total Employee</div>
+                </a>
+                <a href="manage_item.php">
+                    <div>Total Items</div>
+                </a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

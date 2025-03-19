@@ -16,7 +16,7 @@
         include "connected.php";
 
         if (strtolower($role) == 'admin') {
-            $sql = "select * from user where name = '$username' and password = '$password'";
+            $sql = "select * from admin where name = '$username' and password = '$password'";
             $result = $conn->query($sql);
 
             if ($result->num_rows > 0) {
